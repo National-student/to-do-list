@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To do list</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form class="form">
+            <input class="form_input" type="text" placeholder="To do list">
+            <button type="submit">Add</button> <br>         
+        </form>
+
+        <div class="section">
+            <ol class="section_list"></ol>
+        </div>
+
+        <template id="template">
+            <li class="item">
+                <input class="checkbox" type="checkbox" id="todo-complated">
+                <span class="todo_text">Dars qilish</span>
+                <button class="delete_button">Delete</button>
+            </li>
+        </template>
+
+       <div class="btn_controls">
+        <button class="btn_all">All: <span class="btnAll">0</span></button>
+        <button class="btn_complated">complated: <span class="btnComplated">0</span></button>
+        <button class="btn_uncomplated">Uncomplated: <span class="btnUncomplated">0</span></button>
+       </div>
+        
+    </div>
+
+   
+    <script src="js/main.js"></script>
+</body>
+</html>

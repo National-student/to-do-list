@@ -1,0 +1,3 @@
+.checkbox:checked + .todo_text {
+    text-decoration: line-through;
+}
